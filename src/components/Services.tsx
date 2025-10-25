@@ -121,7 +121,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-24 bg-gradient-to-br from-stone-50 to-amber-50 relative overflow-hidden"
+      className="py-24 bg-linear-to-br from-stone-50 to-amber-50 relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(251,191,36,0.1),transparent_50%)]"></div>
@@ -135,7 +135,7 @@ export default function Services() {
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-stone-900 mb-6">
             Our{" "}
-            <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
               Services
             </span>
           </h2>
@@ -154,13 +154,13 @@ export default function Services() {
             >
               {/* Gradient background */}
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-500`}
+                className={`absolute inset-0 bg-linear-to-br ${service.gradient} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-500`}
               ></div>
 
               <div className="relative z-10">
                 {/* Icon */}
                 <div
-                  className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                  className={`w-16 h-16 bg-linear-to-br ${service.gradient} rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                 >
                   {service.icon}
                 </div>
@@ -180,7 +180,7 @@ export default function Services() {
                       className="flex items-center text-sm text-stone-600 group-hover:text-stone-700 transition-colors"
                     >
                       <div
-                        className={`w-2 h-2 bg-gradient-to-r ${service.gradient} rounded-full mr-4 group-hover:scale-125 transition-transform flex-shrink-0`}
+                        className={`w-2 h-2 bg-linear-to-r ${service.gradient} rounded-full mr-4 group-hover:scale-125 transition-transform flex-shrink-0`}
                       ></div>
                       <span className="leading-relaxed">{feature}</span>
                     </li>
@@ -191,7 +191,7 @@ export default function Services() {
                 <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href="#"
-                    className={`inline-flex items-center text-sm font-medium bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent hover:scale-105 transition-transform`}
+                    className={`inline-flex items-center text-sm font-medium bg-linear-to-r ${service.gradient} bg-clip-text text-transparent hover:scale-105 transition-transform`}
                   >
                     Learn More
                     <svg
@@ -229,7 +229,7 @@ export default function Services() {
                   .getElementById("contact")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="bg-linear-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Get Free Quote
             </button>

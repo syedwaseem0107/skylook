@@ -50,7 +50,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="py-24 bg-gradient-to-br from-stone-50 to-amber-50 relative overflow-hidden"
+      className="py-24 bg-linear-to-br from-stone-50 to-amber-50 relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(251,191,36,0.1),transparent_50%)]"></div>
@@ -64,7 +64,7 @@ export default function Gallery() {
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-stone-900 mb-6">
             Our{" "}
-            <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
               Work
             </span>
           </h2>
@@ -148,7 +148,7 @@ export default function Gallery() {
                     .getElementById("contact")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="bg-linear-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Start Your Project
               </button>

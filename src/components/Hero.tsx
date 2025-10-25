@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient and pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-stone-50 via-amber-50 to-orange-50"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-stone-50 via-amber-50 to-orange-50"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(251,191,36,0.1),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(217,119,6,0.1),transparent_50%)]"></div>
 
@@ -23,14 +23,14 @@ export default function Hero() {
       {/* Main content */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
         {/* Badge */}
-        <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-medium text-amber-700 mb-8 shadow-lg">
+        <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-medium text-amber-700 mb-8 shadow-lg no-select">
           <span className="w-2 h-2 bg-amber-500 rounded-full mr-2 animate-pulse"></span>
           Professional Ceiling Solutions
         </div>
 
         <h1 className="text-6xl md:text-8xl font-bold text-stone-900 mb-8 leading-tight">
           <span className="block mb-2">Skylook</span>
-          <span className="block bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+          <span className="block bg-linear-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
             Ceilings
           </span>
         </h1>
@@ -50,7 +50,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
           <button
             onClick={scrollToNext}
-            className="group bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            className="group bg-linear-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             <span className="flex items-center justify-center">
               Our Services
@@ -113,12 +113,12 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20">
         <button
           onClick={scrollToNext}
-          className="animate-bounce text-stone-400 hover:text-stone-600 transition-colors"
+          className="animate-bounce text-stone-400 hover:text-stone-600 transition-colors bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-lg"
         >
-          <ChevronDownIcon className="h-8 w-8" />
+          <ChevronDownIcon className="h-6 w-6 md:h-8 md:w-8" />
         </button>
       </div>
     </section>

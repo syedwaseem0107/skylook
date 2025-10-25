@@ -15,7 +15,7 @@ export default function About() {
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-stone-900 mb-6">
             About{" "}
-            <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
               Skylook Ceilings
             </span>
           </h2>
@@ -40,9 +40,9 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6">
-              <div className="flex items-start space-x-4 p-6 bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl">
-                <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex items-start space-x-4 p-6 bg-linear-to-br from-amber-50 to-orange-50 rounded-xl">
+                <div className="w-12 h-12 bg-linear-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -65,8 +65,8 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 p-6 bg-linear-to-br from-blue-50 to-cyan-50 rounded-xl">
+                <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -89,8 +89,8 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 p-6 bg-linear-to-br from-green-50 to-emerald-50 rounded-xl">
+                <div className="w-12 h-12 bg-linear-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -113,8 +113,8 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4 p-6 bg-linear-to-br from-purple-50 to-pink-50 rounded-xl">
+                <div className="w-12 h-12 bg-linear-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -142,7 +142,7 @@ export default function About() {
           <div className="relative">
             {/* Stats cards */}
             <div className="grid grid-cols-1 gap-6">
-              <div className="bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl p-8 text-white shadow-2xl">
+              <div className="bg-linear-to-br from-amber-500 to-orange-500 rounded-2xl p-8 text-white shadow-2xl">
                 <div className="text-5xl font-bold mb-4">500+</div>
                 <div className="text-amber-100 text-lg mb-6">
                   Projects Completed
@@ -152,7 +152,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl p-8 text-white shadow-2xl">
+              <div className="bg-linear-to-br from-blue-500 to-cyan-500 rounded-2xl p-8 text-white shadow-2xl">
                 <div className="text-5xl font-bold mb-4">5+</div>
                 <div className="text-blue-100 text-lg mb-6">
                   Years Experience
@@ -162,7 +162,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl p-8 text-white shadow-2xl">
+              <div className="bg-linear-to-br from-green-500 to-emerald-500 rounded-2xl p-8 text-white shadow-2xl">
                 <div className="text-5xl font-bold mb-4">100%</div>
                 <div className="text-green-100 text-lg mb-6">
                   Customer Satisfaction

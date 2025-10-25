@@ -54,13 +54,13 @@ export default function Hero() {
           <button
             onClick={() =>
               document
-                .getElementById("services")
+                .getElementById("gallery")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
             className="group bg-linear-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             <span className="flex items-center justify-center">
-              Our Services
+              Our Work
               <svg
                 className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"
                 fill="none"

@@ -19,8 +19,8 @@ export default function Navigation() {
   const navItems = [
     { name: "Home", id: "hero" },
     { name: "About", id: "about" },
-    { name: "Services", id: "services" },
     { name: "Gallery", id: "gallery" },
+    { name: "Services", id: "services" },
     { name: "Contact", id: "contact" },
   ];
 

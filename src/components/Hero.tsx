@@ -9,7 +9,10 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
+    >
       {/* Background with gradient and pattern */}
       <div className="absolute inset-0 bg-linear-to-br from-stone-50 via-amber-50 to-orange-50"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(251,191,36,0.1),transparent_50%)]"></div>
@@ -21,7 +24,7 @@ export default function Hero() {
       <div className="absolute bottom-40 left-20 w-12 h-12 bg-stone-300 rounded-full opacity-25 animate-pulse"></div>
 
       {/* Main content */}
-      <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
+      <div className="relative z-10 text-center max-w-6xl mx-auto px-6 mt-4">
         {/* Badge */}
         <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-medium text-amber-700 mb-8 shadow-lg no-select">
           <span className="w-2 h-2 bg-amber-500 rounded-full mr-2 animate-pulse"></span>

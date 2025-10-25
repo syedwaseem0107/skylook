@@ -2,13 +2,13 @@
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white relative overflow-hidden">
+    <section id="about" className="py-16 bg-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_20%,rgba(251,191,36,0.05),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_80%,rgba(217,119,6,0.05),transparent_50%)]"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 bg-amber-100 rounded-full text-sm font-medium text-amber-700 mb-6">
             <span className="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
             About Us
@@ -26,13 +26,13 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="space-y-4">
             <div>
-              <h3 className="text-3xl font-bold text-stone-900 mb-6">
+              <h3 className="text-3xl font-bold text-stone-900 mb-4">
                 Our Expertise
               </h3>
-              <p className="text-lg text-stone-600 leading-relaxed mb-8">
+              <p className="text-lg text-stone-600 leading-relaxed mb-4">
                 With years of experience in interior design and ceiling
                 installations, we bring creativity and precision to every
                 project. Our team specializes in modern false ceiling designs,

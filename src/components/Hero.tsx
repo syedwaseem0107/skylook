@@ -26,19 +26,19 @@ export default function Hero() {
       {/* Main content */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6 mt-4">
         {/* Badge */}
-        <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-medium text-amber-700 mb-8 shadow-lg no-select">
+        <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-medium text-amber-700 mb-4 shadow-lg no-select">
           <span className="w-2 h-2 bg-amber-500 rounded-full mr-2 animate-pulse"></span>
           Professional Ceiling Solutions
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-bold text-stone-900 mb-8 leading-tight">
+        <h1 className="text-6xl md:text-8xl font-bold text-stone-900 mb-4 leading-tight">
           <span className="block mb-2">Skylook</span>
           <span className="block bg-linear-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
             Ceilings
           </span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-stone-600 mb-16 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-stone-600 mb-8 max-w-3xl mx-auto leading-relaxed">
           Transform your space with stunning{" "}
           <span className="font-semibold text-amber-700">false ceilings</span>,
           elegant{" "}
@@ -50,7 +50,7 @@ export default function Hero() {
           </span>
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
           <button
             onClick={() =>
               document
@@ -104,7 +104,7 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto mt-16">
+        <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto mt-8">
           <div className="text-center p-4">
             <div className="text-3xl font-bold text-amber-600 mb-3">250+</div>
             <div className="text-sm text-stone-600">Projects</div>

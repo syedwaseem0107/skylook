@@ -31,9 +31,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-stone-50">
+    <section id="contact" className="py-16 bg-stone-50">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-4xl md:text-5xl font-bold text-stone-800 mb-6">
             Get In Touch
           </h2>
@@ -43,7 +43,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-6">
           <div>
             <h3 className="text-2xl font-semibold text-stone-800 mb-6">
               Contact Information

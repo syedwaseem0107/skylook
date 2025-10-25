@@ -129,7 +129,7 @@ export default function Contact() {
           </div>
 
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <h3 className="text-2xl font-semibold text-stone-800 mb-6">
+            <h3 className="text-2xl font-semibold text-stone-800 mb-8">
               Request a Quote
             </h3>
 
@@ -138,7 +138,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-stone-700 mb-2"
+                    className="block text-sm font-medium text-stone-700 mb-3"
                   >
                     Name *
                   </label>
@@ -156,7 +156,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block text-sm font-medium text-stone-700 mb-2"
+                    className="block text-sm font-medium text-stone-700 mb-3"
                   >
                     Phone *
                   </label>
@@ -175,7 +175,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-stone-700 mb-2"
+                  className="block text-sm font-medium text-stone-700 mb-3"
                 >
                   Email *
                 </label>
@@ -193,7 +193,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="service"
-                  className="block text-sm font-medium text-stone-700 mb-2"
+                  className="block text-sm font-medium text-stone-700 mb-3"
                 >
                   Service Required
                 </label>
@@ -216,7 +216,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-stone-700 mb-2"
+                  className="block text-sm font-medium text-stone-700 mb-3"
                 >
                   Message
                 </label>

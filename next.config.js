@@ -5,9 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // For GitHub Pages deployment
-  basePath: process.env.NODE_ENV === "production" ? "/skylook" : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/skylook/" : "",
+  // For custom domain deployment
+  basePath: "",
+  assetPrefix: "",
 };
 
 module.exports = nextConfig;

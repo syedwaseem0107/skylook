@@ -50,10 +50,13 @@ export default function Contact() {
             </h3>
 
             <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4 shrink-0">
+              <a
+                href="tel:+919742259932"
+                className="flex items-start hover:bg-amber-50 rounded-lg p-3 -m-3 transition-colors cursor-pointer group"
+              >
+                <div className="w-12 h-12 bg-amber-100 group-hover:bg-amber-200 rounded-lg flex items-center justify-center mr-4 shrink-0 transition-colors">
                   <svg
-                    className="w-6 h-6 text-amber-600"
+                    className="w-6 h-6 text-amber-600 group-hover:text-amber-700"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -67,15 +70,22 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-stone-800">Phone</h4>
-                  <p className="text-stone-600">+91 98765 43210</p>
+                  <h4 className="font-semibold text-stone-800 group-hover:text-amber-700 transition-colors">
+                    Phone
+                  </h4>
+                  <p className="text-amber-600 group-hover:text-amber-700 transition-colors">
+                    +91 97422 59932
+                  </p>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4 shrink-0">
+              <a
+                href="mailto:skylookceilings@gmail.com"
+                className="flex items-start hover:bg-amber-50 rounded-lg p-3 -m-3 transition-colors cursor-pointer group"
+              >
+                <div className="w-12 h-12 bg-amber-100 group-hover:bg-amber-200 rounded-lg flex items-center justify-center mr-4 shrink-0 transition-colors">
                   <svg
-                    className="w-6 h-6 text-amber-600"
+                    className="w-6 h-6 text-amber-600 group-hover:text-amber-700"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -89,10 +99,14 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-stone-800">Email</h4>
-                  <p className="text-stone-600">info@skylookceilings.com</p>
+                  <h4 className="font-semibold text-stone-800 group-hover:text-amber-700 transition-colors">
+                    Email
+                  </h4>
+                  <p className="text-amber-600 group-hover:text-amber-700 transition-colors">
+                    skylookceilings@gmail.com
+                  </p>
                 </div>
-              </div>
+              </a>
 
               <div className="flex items-start">
                 <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4 shrink-0">
@@ -119,9 +133,9 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-stone-800">Address</h4>
                   <p className="text-stone-600">
-                    123 Interior Street
+                    AECS B Block, Manipal County Road
                     <br />
-                    Design City, DC 12345
+                    Begur, Bangalore 560 068
                   </p>
                 </div>
               </div>

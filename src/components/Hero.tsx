@@ -52,7 +52,11 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
           <button
-            onClick={scrollToNext}
+            onClick={() =>
+              document
+                .getElementById("services")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
             className="group bg-linear-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white px-10 py-4 rounded-xl text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             <span className="flex items-center justify-center">
@@ -102,7 +106,7 @@ export default function Hero() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto mt-16">
           <div className="text-center p-4">
-            <div className="text-3xl font-bold text-amber-600 mb-3">500+</div>
+            <div className="text-3xl font-bold text-amber-600 mb-3">250+</div>
             <div className="text-sm text-stone-600">Projects</div>
           </div>
           <div className="text-center p-4">

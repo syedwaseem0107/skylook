@@ -96,7 +96,7 @@ export default function Gallery() {
                 </div>
 
                 {/* Permanent gradient for text readability */}
-                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/50 to-transparent pointer-events-none"></div>
 
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -115,7 +115,7 @@ export default function Gallery() {
                     </p>
 
                     {/* View button */}
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {/* <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <button className="inline-flex items-center text-sm font-medium text-white hover:text-amber-300 transition-colors">
                         View Details
                         <svg
@@ -132,7 +132,7 @@ export default function Gallery() {
                           />
                         </svg>
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 

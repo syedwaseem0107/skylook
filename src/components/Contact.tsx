@@ -7,16 +7,36 @@ export default function Contact() {
     name: "",
     email: "",
     phone: "",
-    service: "",
     message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    alert("Thank you for your inquiry! We will contact you soon.");
-    setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    
+    // Format the message for WhatsApp
+    const whatsappMessage = `*New Quote Request from Website*
+
+*Name:* ${formData.name}
+*Email:* ${formData.email}
+*Phone:* ${formData.phone}
+
+*Message:*
+${formData.message || "No additional message provided"}
+
+---
+Sent via Skylook Ceilings Website`;
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // WhatsApp API URL (same number as your WhatsApp float button)
+    const whatsappURL = `https://wa.me/919742259932?text=${encodedMessage}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappURL, '_blank');
+    
+    // Clear the form
+    setFormData({ name: "", email: "", phone: "", message: "" });
   };
 
   const handleChange = (
@@ -202,29 +222,6 @@ export default function Contact() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
                 />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="service"
-                  className="block text-sm font-medium text-stone-700 mb-3"
-                >
-                  Service Required
-                </label>
-                <select
-                  id="service"
-                  name="service"
-                  value={formData.service}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-stone-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"
-                >
-                  <option value="">Select a service</option>
-                  <option value="false-ceiling">False Ceiling</option>
-                  <option value="pop-ceiling">POP Ceiling</option>
-                  <option value="gypsum-ceiling">Gypsum Ceiling</option>
-                  <option value="repair">Ceiling Repair</option>
-                  <option value="consultation">Consultation</option>
-                </select>
               </div>
 
               <div>

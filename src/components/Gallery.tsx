@@ -1,49 +1,57 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Gallery() {
-  // Placeholder images - replace with actual project photos
+  // Real project images showcasing our ceiling work
   const projects = [
     {
       id: 1,
-      title: "Modern False Ceiling",
+      title: "Luxury Living Room Ceiling",
       category: "False Ceiling",
-      image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop",
+      description:
+        "Multi-layered false ceiling with organic geometric patterns and integrated LED lighting",
+      image: "/images/luxury-living-room-ceiling.jpeg",
     },
     {
       id: 2,
-      title: "Elegant POP Design",
+      title: "Organic Curvilinear Design",
       category: "POP Ceiling",
-      image:
-        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea8?w=400&h=300&fit=crop",
+      description:
+        "Flowing curvilinear patterns with warm LED strip lighting creating ambient atmosphere",
+      image: "/images/organic-curvilinear-ceiling.jpeg",
     },
     {
       id: 3,
-      title: "Contemporary Gypsum",
+      title: "Marble Feature Wall Ceiling",
       category: "Gypsum Ceiling",
-      image:
-        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop",
+      description:
+        "Sophisticated ceiling design complementing luxury marble feature walls",
+      image: "/images/marble-feature-wall-ceiling.jpeg",
     },
     {
       id: 4,
-      title: "Decorative Pattern",
+      title: "Geometric Star Pattern",
       category: "POP Ceiling",
-      image:
-        "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop",
+      description:
+        "Intricate geometric star motif with integrated lighting and classic chandelier",
+      image: "/images/geometric-star-ceiling.jpeg",
     },
     {
       id: 5,
-      title: "LED Integrated Design",
+      title: "Hexagonal Honeycomb Design",
       category: "False Ceiling",
-      image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop",
+      description:
+        "Modern hexagonal honeycomb pattern with warm LED perimeter lighting",
+      image: "/images/hexagonal-honeycomb-ceiling.jpeg",
     },
     {
       id: 6,
-      title: "Minimalist Gypsum",
-      category: "Gypsum Ceiling",
-      image:
-        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea8?w=400&h=300&fit=crop",
+      title: "Modern Office Ceiling",
+      category: "Commercial",
+      description:
+        "Clean commercial ceiling installation with glass partitions and modern aesthetics",
+      image: "/images/modern-office-partition.jpeg",
     },
   ];
 
@@ -75,28 +83,35 @@ export default function Gallery() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div key={project.id} className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/20 group-hover:-translate-y-2">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
+                <div className="aspect-4/3 overflow-hidden relative">
+                  <Image
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                {/* Permanent gradient for text readability */}
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
+
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 {/* Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-3">
                   <div className="text-white">
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-amber-300 transition-colors">
+                    <h3 className="text-xl font-bold mb-1 group-hover:text-amber-300 transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-white/80 mb-4">
+                    <p className="text-sm text-white/80 mb-1">
                       {project.category}
+                    </p>
+                    <p className="text-xs text-white/70 mb-2 leading-relaxed">
+                      {project.description}
                     </p>
 
                     {/* View button */}

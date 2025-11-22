@@ -143,7 +143,7 @@ export default function About() {
             {/* Stats cards */}
             <div className="grid grid-cols-1 gap-6">
               <div className="bg-linear-to-br from-amber-500 to-orange-500 rounded-2xl p-8 text-white shadow-2xl">
-                <div className="text-5xl font-bold mb-4">250+</div>
+                <div className="text-5xl font-bold mb-4">500+</div>
                 <div className="text-amber-100 text-lg mb-6">
                   Projects Completed
                 </div>
@@ -153,7 +153,7 @@ export default function About() {
               </div>
 
               <div className="bg-linear-to-br from-blue-500 to-cyan-500 rounded-2xl p-8 text-white shadow-2xl">
-                <div className="text-5xl font-bold mb-4">5+</div>
+                <div className="text-5xl font-bold mb-4">7+</div>
                 <div className="text-blue-100 text-lg mb-6">
                   Years Experience
                 </div>
